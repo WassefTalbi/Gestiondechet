@@ -30,4 +30,11 @@ class TestingController extends AbstractController
     {
         return $this->render('admin/camion/camionsList.html.twig');
     }
+    /**
+     * @Route("/camions2", name="app_camions")
+     */
+    public function camionList2(): Response
+    {
+        return $this->render('admin/camion/camionsList.html.twig');
+    }
 }
